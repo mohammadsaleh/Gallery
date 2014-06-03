@@ -4,7 +4,7 @@ App::uses('Folder', 'Utility');
 class Album extends GalleryAppModel
 {
     public $name = 'Album';
-    // public $tablePrefix = 'gallery_';
+    public $tablePrefix = 'gallery_';
     public $order = 'Album.id DESC';
 
 	public $hasMany = array(

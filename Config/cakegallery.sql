@@ -1,4 +1,4 @@
-CREATE TABLE `pictures` (
+CREATE TABLE `gallery_pictures` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `path` varchar(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `pictures` (
   KEY `main_id` (`main_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
-CREATE TABLE `albums` (
+CREATE TABLE `gallery_albums` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `default_name` varchar(255) NOT NULL,

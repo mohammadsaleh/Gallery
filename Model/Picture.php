@@ -4,6 +4,7 @@ App::uses('File', 'Utility');
 class Picture extends GalleryAppModel{
 
     public $name = 'Picture';
+    public $tablePrefix = 'gallery_';
 
     public $belongsTo = array('Gallery.Album');
 
