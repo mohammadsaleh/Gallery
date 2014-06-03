@@ -193,7 +193,12 @@
                         <div class="col-xs-6 col-md-3 ui-state-default" alt="<?php echo $picture['id'] ?>"
                              id="<?php echo $picture['id'] ?>">
                             <div class="thumbnail th-pictures-container" style="position: relative">
-                                <?php $picture_url = !empty($picture['styles']['medium']) ? $picture['styles']['medium'] : "http://placehold.it/255x170"; ?>
+                                <?php 
+                                    $picture_url = !empty($picture['styles']['medium']) ? $picture['styles']['medium'] : "http://placehold.it/255x170"; 
+                                    $picture_url = WWW_ROOT . $picture_url;
+                                    
+                                    
+                                ;?>
                                 <img src="<?php echo $picture_url ?>" alt="">
 
                                 <div class="icons-manage-image">
