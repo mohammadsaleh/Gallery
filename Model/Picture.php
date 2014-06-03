@@ -450,7 +450,7 @@ class Picture extends GalleryAppModel{
 	        return false;
 	    }
 
-	    return WWW_ROOT . 'files' . DS . 'gallery' . DS . $album_id . DS . $filename;
+	    return 'files' . DS . 'gallery' . DS . $album_id . DS . $filename;
 	}
 }
 
