@@ -16,7 +16,7 @@
         </h2>
 
         <?php echo $this->Html->link(
-            '<i class="fa fa-cloud-upload"></i>'. __d('croogo','Upload pictures'),
+            '<i class="fa fa-cloud-upload"></i>'. __d('gallery','Upload pictures'),
             '#modalUpload',
             array(
                 'data-toggle' => 'modal',
@@ -25,7 +25,7 @@
             )
         ); ?>
         <?php echo $this->Html->link(
-            '<i class="fa fa-external-link"></i>'. __d('croogo','View album'),
+            '<i class="fa fa-external-link"></i>'. __d('gallery','View album'),
             array(
                 'controller' => 'albums',
                 'action' => 'view',
@@ -42,7 +42,7 @@
         ); ?>
 
         <a href="javascript:void(0)" class="btn btn-sm btn-primary open-config pull-right">
-            <i class="fa fa-cog"></i> <?php  echo __d('croogo','Options') ?>
+            <i class="fa fa-cog"></i> <?php  echo __d('gallery','Options') ?>
         </a>
 
         <div class="clearfix"></div>
@@ -74,7 +74,7 @@
                     <div class="panel-heading options">
                         <h3 class="panel-title">
                             <i class="fa fa-cog"></i>
-                            <?php  echo __d('croogo','Album options') ?>
+                            <?php  echo __d('gallery','Album options') ?>
                         </h3>
                     </div>
                     <div class="panel-body options">
@@ -84,10 +84,10 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <?php echo $this->Form->input(
-                                    __d('croogo','title'),
+                                    __d('gallery','title'),
                                     array(
                                         'value' => !empty($album) ? $album['Album']['title'] : '',
-                                        'label' => __d('croogo','Album title'),
+                                        'label' => __d('gallery','Album title'),
                                         'placeholder' => 'Ex: xbox-360'
                                     )
                                 ) ?>
@@ -99,7 +99,7 @@
                                     array(
                                         'value' => !empty($album) ? $album['Album']['tags'] : '',
                                         'label' => 'Tags (comma separated)',
-                                        'placeholder' => __d('croogo','Ex: city, sun, chicago')
+                                        'placeholder' => __d('gallery','Ex: city, sun, chicago')
                                     )
                                 ) ?>
                             </div>
@@ -108,7 +108,7 @@
 
                                 <div class="manipulation">
                                     <?php echo $this->Form->input(
-                                        __d('croogo','status'),
+                                        __d('gallery','status'),
                                         array(
                                             'type' => 'radio',
                                             'value' => !empty($album) ? $album['Album']['status'] : 'published',
@@ -149,11 +149,11 @@
 				                    <li>If you delete this album, all its images will be deleted as well.</li>
 				                    <li>The first image of the album will be considered as the cover. To change the cover just drag the image you want to mark as a cover at the first position of the grid</li>
 				                </ul>">
-                            <i class="fa fa-info-circle"></i> <?php  echo __d('croogo','Help') ?>
+                            <i class="fa fa-info-circle"></i> <?php  echo __d('gallery','Help') ?>
                         </button>
 
                         <?php echo $this->Html->link(
-                            '<i class="fa fa-trash-o"></i>'. __d('croogo','Delete album'),
+                            '<i class="fa fa-trash-o"></i>'. __d('gallery','Delete album'),
                             array(
                                 'controller' => 'albums',
                                 'action' => 'delete',
@@ -179,11 +179,11 @@
             <?php if (!count($album['Picture'])) { ?>
                 <div class="container-empty">
                     <div class="img"><i class="fa fa-picture-o"></i></div>
-                    <h2><?php  echo __d('croogo',"This album doesn't have pictures yet.") ?></h2>
+                    <h2><?php  echo __d('gallery',"This album doesn't have pictures yet.") ?></h2>
                     <br/>
                     <a href="#modalUpload" data-toggle="modal" class="btn btn-success">
                         <i class="fa fa-cloud-upload"></i>
-                        <?php  __d('croogo','Upload pictures') ?>
+                        <?php echo  __d('gallery','Upload pictures') ?>
                     </a>
                 </div>
             <?php } else { ?>
@@ -264,7 +264,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="pictureName">
                     <i class="fa fa-picture-o"></i>
-                    <?php echo __d('croogo','Upload pictures') ?>
+                    <?php echo __d('gallery','Upload pictures') ?>
                 </h4>
             </div>
             <div class="modal-body">
@@ -278,7 +278,8 @@
                             'admin' => true,
                         ),
                         'class' => 'dropzone',
-                        'id' => 'drop'
+                        'id' => 'drop',
+                        'style'=>'background-image: url("../img/amir.png")!important;'
                     )
                 )?>
                 </form>
@@ -286,7 +287,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">
                     <i class="fa fa-check"></i>
-                   <?php  echo __d('croogo',' Done') ?>
+                   <?php  echo __d('gallery',' Done') ?>
                 </button>
             </div>
         </div>

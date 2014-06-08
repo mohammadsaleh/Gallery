@@ -33,7 +33,7 @@ class AlbumsController extends GalleryAppController
 	public function admin_view($id = null){
 	    $this->Album->id = $id;
 	    if (!$this->Album->exists()) {
-	        throw new NotFoundException(__d('croogo', "This album does not exist"));	        
+	        throw new NotFoundException(__d('gallery', "This album does not exist"));	        
 	    }
 	    $this->set('album', $this->Album->read(null));
 	}
@@ -47,7 +47,7 @@ class AlbumsController extends GalleryAppController
 	public function admin_update(){    	
 	    if ($this->request->is('post')) {
 	        if ($this->Album->save($this->request->data)) {
-	            echo __d('croogo', "You configurations are saved.");
+	            echo __d('gallery', "You configurations are saved.");
 	        }
 	    }
 	    $this->render(false, false);

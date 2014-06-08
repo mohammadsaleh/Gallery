@@ -29,7 +29,7 @@ class InstallController extends GalleryAppController
 
         sleep(10);
 
-        $this->Session->setFlash(__d('croogo','Success! Gallery is now installed in your app.'));
+        $this->Session->setFlash(__d('gallery','Success! Gallery is now installed in your app.'));
 
         $this->redirect(
             array(
@@ -51,7 +51,7 @@ class InstallController extends GalleryAppController
             $db = ConnectionManager::getDataSource('default');
 
             if (!$db->isConnected()) {
-                throw new Exception(__d('croogo','"You need to connect to a MySQL Database to use this Plugin."'));
+                throw new Exception(__d('gallery','"You need to connect to a MySQL Database to use this Plugin."'));
             }
 
             /** Verify if the tables already exists */

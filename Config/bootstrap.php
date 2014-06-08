@@ -33,7 +33,7 @@ Configure::write('GalleryOptions', $config);
 
 CroogoNav::add('Gallery', array(
 	'icon' => array('picture', 'large'),
-	'title' => __d('croogo', 'Gallery'),
+	'title' => __d('gallery', 'Gallery'),
 	'url' => array(
 		'plugin' => 'gallery',
 		'controller' => 'Gallery',
