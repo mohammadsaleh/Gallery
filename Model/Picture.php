@@ -255,28 +255,28 @@ class Picture extends GalleryAppModel{
 	        switch ($image->error) {
 
 	            case 1:
-	                throw new InternalErrorException('Source file could not be found!');
+	                throw new InternalErrorException(__d('croogo','Source file could not be found!'));
 	                break;
 	            case 2:
-	                throw new InternalErrorException('Source file is not readable!');
+	                throw new InternalErrorException(__d('croogo','Source file is not readable!'));
 	                break;
 	            case 3:
-	                throw new InternalErrorException('Could not write target file!');
+	                throw new InternalErrorException(__d('croogo','Could not write target file!'));
 	                break;
 	            case 4:
-	                throw new InternalErrorException('Unsupported source file format!');
+	                throw new InternalErrorException(__d('croogo','Unsupported source file format!'));
 	                break;
 	            case 5:
-	                throw new InternalErrorException('Unsupported target file format!');
+	                throw new InternalErrorException(__d('croogo','Unsupported target file format!'));
 	                break;
 	            case 6:
-	                throw new InternalErrorException('GD library version does not support target file format!');
+	                throw new InternalErrorException(__d('croogo','GD library version does not support target file format!'));
 	                break;
 	            case 7:
-	                throw new InternalErrorException('GD library is not installed!');
+	                throw new InternalErrorException(__d('croogo','GD library is not installed!'));
 	                break;
 	            case 8:
-	                throw new InternalErrorException('"chmod" command is disabled via configuration!');
+	                throw new InternalErrorException(__d('croogo','"chmod" command is disabled via configuration!'));
 	                break;
 
 	        }
@@ -322,15 +322,15 @@ class Picture extends GalleryAppModel{
 	) {
 
 	    if (!$album_id) {
-	        throw new ForbiddenException("The album ID is required");
+	        throw new ForbiddenException(__d('croogo','The album ID is required'));
 	    }
 
 	    if (!$path) {
-	        throw new ForbiddenException("The PATH is required");
+	        throw new ForbiddenException(__d('croogo','The PATH is required'));
 	    }
 
 	    if (!$tmp_name) {
-	        throw new ForbiddenException("The TMP_NAME is required");
+	        throw new ForbiddenException(__d('croogo','The TMP_NAME is required'));
 	    }
 
 	    # Copy the file to the folder
@@ -353,7 +353,7 @@ class Picture extends GalleryAppModel{
 
 	        return null;
 	    } else {
-	        throw new ForbiddenException("Upload failed. Check your folders permissions.");
+	        throw new ForbiddenException(__d('croogo','Upload failed. Check your folders permissions.'));
 	    }
 	}
 

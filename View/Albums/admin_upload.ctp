@@ -16,7 +16,7 @@
         </h2>
 
         <?php echo $this->Html->link(
-            '<i class="fa fa-cloud-upload"></i> Upload pictures',
+            '<i class="fa fa-cloud-upload"></i>'. __d('croogo','Upload pictures'),
             '#modalUpload',
             array(
                 'data-toggle' => 'modal',
@@ -25,10 +25,8 @@
             )
         ); ?>
         <?php echo $this->Html->link(
-            '<i class="fa fa-external-link"></i> View album',
+            '<i class="fa fa-external-link"></i>'. __d('croogo','View album'),
             array(
-
-
                 'controller' => 'albums',
                 'action' => 'view',
                 $album['Album']['id'],
@@ -44,7 +42,7 @@
         ); ?>
 
         <a href="javascript:void(0)" class="btn btn-sm btn-primary open-config pull-right">
-            <i class="fa fa-cog"></i> Options
+            <i class="fa fa-cog"></i> <?php  echo __d('croogo','Options') ?>
         </a>
 
         <div class="clearfix"></div>
@@ -76,7 +74,7 @@
                     <div class="panel-heading options">
                         <h3 class="panel-title">
                             <i class="fa fa-cog"></i>
-                            Album options
+                            <?php  echo __d('croogo','Album options') ?>
                         </h3>
                     </div>
                     <div class="panel-body options">
@@ -86,10 +84,10 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <?php echo $this->Form->input(
-                                    'title',
+                                    __d('croogo','title'),
                                     array(
                                         'value' => !empty($album) ? $album['Album']['title'] : '',
-                                        'label' => 'Album title',
+                                        'label' => __d('croogo','Album title'),
                                         'placeholder' => 'Ex: xbox-360'
                                     )
                                 ) ?>
@@ -101,7 +99,7 @@
                                     array(
                                         'value' => !empty($album) ? $album['Album']['tags'] : '',
                                         'label' => 'Tags (comma separated)',
-                                        'placeholder' => 'Ex: city, sun, chicago'
+                                        'placeholder' => __d('croogo','Ex: city, sun, chicago')
                                     )
                                 ) ?>
                             </div>
@@ -110,7 +108,7 @@
 
                                 <div class="manipulation">
                                     <?php echo $this->Form->input(
-                                        'status',
+                                        __d('croogo','status'),
                                         array(
                                             'type' => 'radio',
                                             'value' => !empty($album) ? $album['Album']['status'] : 'published',
@@ -143,18 +141,19 @@
 
                         <button type="button" class="btn btn-warning btn-sm pull-right popovertrigger"
                                 style="margin-left: 10px"
-                                data-container="body" data-toggle="popover" data-placement="left" data-content="<ul>
-				<li>Use the top form to update your gallery information, such as name, tags or publish status.</li>
-				<li>To upload new images to this album, press the upload button.</li>
-				<li>Drag the pictures to reorder your gallery. (Dont worry, this changes are saved automatically)</li>
-				<li>If you delete this album, all its images will be deleted as well.</li>
-				<li>The first image of the album will be considered as the cover. To change the cover just drag the image you want to mark as a cover at the first position of the grid</li>
-				</ul>">
-                            <i class="fa fa-info-circle"></i> Help
+                                data-container="body" data-toggle="popover" data-placement="left" data-content="
+                                <ul>
+                                    <li>Use the top form to update your gallery information, such as name, tags or publish status.</li>
+				                    <li>To upload new images to this album, press the upload button.</li>
+				                    <li>Drag the pictures to reorder your gallery. (Dont worry, this changes are saved automatically)</li>
+				                    <li>If you delete this album, all its images will be deleted as well.</li>
+				                    <li>The first image of the album will be considered as the cover. To change the cover just drag the image you want to mark as a cover at the first position of the grid</li>
+				                </ul>">
+                            <i class="fa fa-info-circle"></i> <?php  echo __d('croogo','Help') ?>
                         </button>
 
                         <?php echo $this->Html->link(
-                            '<i class="fa fa-trash-o"></i> Delete album',
+                            '<i class="fa fa-trash-o"></i>'. __d('croogo','Delete album'),
                             array(
                                 'controller' => 'albums',
                                 'action' => 'delete',
@@ -180,11 +179,11 @@
             <?php if (!count($album['Picture'])) { ?>
                 <div class="container-empty">
                     <div class="img"><i class="fa fa-picture-o"></i></div>
-                    <h2>This album doesn't have pictures yet.</h2>
+                    <h2><?php  echo __d('croogo',"This album doesn't have pictures yet.") ?></h2>
                     <br/>
                     <a href="#modalUpload" data-toggle="modal" class="btn btn-success">
                         <i class="fa fa-cloud-upload"></i>
-                        Upload pictures
+                        <?php  __d('croogo','Upload pictures') ?>
                     </a>
                 </div>
             <?php } else { ?>
@@ -200,7 +199,6 @@
                                     
                                 ;?>
                                 <img src="<?php echo $picture_url ?>" alt="">
-
                                 <div class="icons-manage-image">
                                     <a href="javascript:void(0)" class="remove-picture btn btn-lg btn-danger"
                                        data-file-id="<?php echo $picture['id'] ?>">
@@ -266,7 +264,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="pictureName">
                     <i class="fa fa-picture-o"></i>
-                    Upload pictures
+                    <?php echo __d('croogo','Upload pictures') ?>
                 </h4>
             </div>
             <div class="modal-body">
@@ -288,7 +286,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">
                     <i class="fa fa-check"></i>
-                    Done
+                   <?php  echo __d('croogo',' Done') ?>
                 </button>
             </div>
         </div>

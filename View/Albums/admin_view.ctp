@@ -4,7 +4,7 @@
     </div>
     <div class="col-md-2">
         <?php echo $this->Html->link(
-            '<i class="fa fa-edit"></i> Edit album',
+            '<i class="fa fa-edit"></i>'. echo __d('croogo','Edit album'),
             array(
                 'controller' => 'albums',
                 'action' => 'upload',
@@ -29,7 +29,7 @@
             <?php if (empty($album['Picture'])) { ?>
                 <div class="container-empty">
                     <div class="img"><i class="fa fa-picture-o"></i></div>
-                    <h2>This album has no photos yet.</h2>
+                    <h2><?php  echo __d('croogo','This album has no photos yet.') ?></h2>
                 </div>
             <?php } else { ?>
                 <?php foreach ($album['Picture'] as $picture) { ?>

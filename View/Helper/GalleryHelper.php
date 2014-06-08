@@ -25,7 +25,7 @@ class GalleryHelper extends AppHelper
         $html_options['escape'] = false;
 
         return $this->_View->Html->link(
-            '<i class="fa fa-plus"></i> New Album',
+            '<i class="fa fa-plus"></i> ' .__d('croogo','New Album'),
             array(
                 'plugin' => 'gallery',
                 'controller' => 'albums',

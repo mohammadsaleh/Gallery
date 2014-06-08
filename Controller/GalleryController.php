@@ -17,9 +17,9 @@ class GalleryController extends GalleryAppController
  *
  * @return void
  */
-	public function admin_index(){
-	    $search_status = "published";
-	    $page_title = "Published albums";
+	public function admin_index(){	    
+	    $search_status = __d('croogo',"Published");
+	    $page_title    = __d('croogo',"Published albums");
 
 	    if (isset($_GET['status']) && $_GET['status'] == 'draft') {
 	        $search_status = $_GET['status'];
