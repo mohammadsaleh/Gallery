@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2014-06-08 08:07+0200\n"
-"PO-Revision-Date: 2014-06-08 10:54+0330\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-06-09 08:08+0200\n"
+"PO-Revision-Date: 2014-06-09 10:39+0330\n"
+"Last-Translator: amir moharami <a.moharami@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.6.4\n"
-"Language: fa_IR\n"
 
 #: Config/bootstrap.php:36
 msgid "Gallery"
@@ -26,10 +26,6 @@ msgstr "این آلبوم وجود ندارد"
 #: Controller/AlbumsController.php:50
 msgid "You configurations are saved."
 msgstr "تنظیمات شما ذخیره شد"
-
-#: Controller/GalleryController.php:21
-msgid "Published"
-msgstr "منتشر شده"
 
 #: Controller/GalleryController.php:22 View/Gallery/admin_index.ctp:76
 msgid "Published albums"
@@ -119,13 +115,37 @@ msgstr "عنوان"
 msgid "Album title"
 msgstr "عنوان آلبوم"
 
+#: View/Albums/admin_upload.ctp:101
+msgid "'Tags (comma separated)'"
+msgstr "تگ ( جداسازی با کاما)"
+
 #: View/Albums/admin_upload.ctp:102
 msgid "Ex: city, sun, chicago"
 msgstr "برای مثال : شهر ، تهران"
 
+#: View/Albums/admin_upload.ctp:107
+msgid "Status"
+msgstr "وضعیت"
+
 #: View/Albums/admin_upload.ctp:111
 msgid "status"
 msgstr "وضعیت"
+
+#: View/Albums/admin_upload.ctp:118
+msgid "Draft"
+msgstr "پیش نویس"
+
+#: View/Albums/admin_upload.ctp:119
+msgid "Published"
+msgstr "منتشر شده"
+
+#: View/Albums/admin_upload.ctp:136
+msgid "Save"
+msgstr "ذخیره"
+
+#: View/Albums/admin_upload.ctp:139
+msgid "Close"
+msgstr "بستن"
 
 #: View/Albums/admin_upload.ctp:152
 msgid "Help"
@@ -139,7 +159,7 @@ msgstr "حذف آلبوم"
 msgid "This album doesn't have pictures yet."
 msgstr "این آلبوم هنوز هیج عکسی ندارد"
 
-#: View/Albums/admin_upload.ctp:289
+#: View/Albums/admin_upload.ctp:290
 msgid " Done"
 msgstr "اتمام"
 
@@ -202,4 +222,4 @@ msgstr ""
 
 #: View/Layouts/default.ctp:6
 msgid "Croogo"
-msgstr ""
+msgstr "کروگو"

@@ -1,205 +1,225 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2014-06-08 08:07+0200\n"
-"PO-Revision-Date: 2014-06-08 10:54+0330\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-06-09 08:08+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.4\n"
-"Language: fa_IR\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: Config/bootstrap.php:36
 msgid "Gallery"
-msgstr "گالری"
+msgstr ""
 
 #: Controller/AlbumsController.php:36
 msgid "This album does not exist"
-msgstr "این آلبوم وجود ندارد"
+msgstr ""
 
 #: Controller/AlbumsController.php:50
 msgid "You configurations are saved."
-msgstr "تنظیمات شما ذخیره شد"
+msgstr ""
 
-#: Controller/GalleryController.php:21
-msgid "Published"
-msgstr "منتشر شده"
-
-#: Controller/GalleryController.php:22 View/Gallery/admin_index.ctp:76
+#: Controller/GalleryController.php:22
+#: View/Gallery/admin_index.ctp:76
 msgid "Published albums"
-msgstr "آلبوم های منتشر شده"
+msgstr ""
 
 #: Controller/InstallController.php:32
 msgid "Success! Gallery is now installed in your app."
-msgstr "تبریک ! گالری شما با موفقیت نصب شد"
+msgstr ""
 
 #: Controller/InstallController.php:54
 msgid "\"You need to connect to a MySQL Database to use this Plugin.\""
-msgstr "شمابرای استفاده از این پلاگین  نیاز دارید که به دیتابیس متصل باشید "
+msgstr ""
 
 #: Model/Picture.php:258
 msgid "Source file could not be found!"
-msgstr "سورس فایل های مورد نیاز پیدا نشد"
+msgstr ""
 
 #: Model/Picture.php:261
 msgid "Source file is not readable!"
-msgstr "سورس فایل خواندنی نیست"
+msgstr ""
 
 #: Model/Picture.php:264
 msgid "Could not write target file!"
-msgstr "روی فایل های مقصد نمی توان نوشت"
+msgstr ""
 
 #: Model/Picture.php:267
 msgid "Unsupported source file format!"
-msgstr "فرمت فایل شما پشتیبانی نمی شود"
+msgstr ""
 
 #: Model/Picture.php:270
 msgid "Unsupported target file format!"
-msgstr "فایل مقصد شما پشتیبانی نمی شود"
+msgstr ""
 
 #: Model/Picture.php:273
 msgid "GD library version does not support target file format!"
-msgstr "ورژن کتابخانه موجود پشتیبانی نمی شود"
+msgstr ""
 
 #: Model/Picture.php:276
 msgid "GD library is not installed!"
-msgstr "کتابخانه جی دی نصب نشده است"
+msgstr ""
 
 #: Model/Picture.php:279
 msgid "\"chmod\" command is disabled via configuration!"
-msgstr "کامند لاین برای این پیکربندی غیر فعال شده است"
+msgstr ""
 
 #: Model/Picture.php:325
 msgid "The album ID is required"
-msgstr "ای دی آلبوم مورد نیاز است"
+msgstr ""
 
 #: Model/Picture.php:329
 msgid "The PATH is required"
-msgstr "مسیر آلبوم مورد نیاز است"
+msgstr ""
 
 #: Model/Picture.php:333
 msgid "The TMP_NAME is required"
-msgstr "نام موقت مورد نیاز است"
+msgstr ""
 
 #: Model/Picture.php:356
 msgid "Upload failed. Check your folders permissions."
-msgstr "آپلود انجام نشد . لطفا اجازه دسترسی پوشه خود را بررسی کنید."
+msgstr ""
 
 #: View/Albums/add.ctp:3
 msgid "Submit"
-msgstr "تایید"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:19;186;267
 msgid "Upload pictures"
-msgstr "آپلود عکس"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:28
 msgid "View album"
-msgstr "نمایش عکس"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:45
 msgid "Options"
-msgstr "تنظیمات"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:77
 msgid "Album options"
-msgstr "تنظیمات آلبوم"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:87
 msgid "title"
-msgstr "عنوان"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:90
 msgid "Album title"
-msgstr "عنوان آلبوم"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:101
+msgid "'Tags (comma separated)'"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:102
 msgid "Ex: city, sun, chicago"
-msgstr "برای مثال : شهر ، تهران"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:107
+msgid "Status"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:111
 msgid "status"
-msgstr "وضعیت"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:118
+msgid "Draft"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:119
+msgid "Published"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:136
+msgid "Save"
+msgstr ""
+
+#: View/Albums/admin_upload.ctp:139
+msgid "Close"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:152
 msgid "Help"
-msgstr "کمک"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:156
 msgid "Delete album"
-msgstr "حذف آلبوم"
+msgstr ""
 
 #: View/Albums/admin_upload.ctp:182
 msgid "This album doesn't have pictures yet."
-msgstr "این آلبوم هنوز هیج عکسی ندارد"
+msgstr ""
 
-#: View/Albums/admin_upload.ctp:289
+#: View/Albums/admin_upload.ctp:290
 msgid " Done"
-msgstr "اتمام"
+msgstr ""
 
 #: View/Albums/admin_view.ctp:7
 msgid "Edit album"
-msgstr "ویرایش آلبوم"
+msgstr ""
 
 #: View/Albums/admin_view.ctp:32
 msgid "This album has no photos yet."
-msgstr "این آلبوم هنوز هیچ عکسی ندارد"
+msgstr ""
 
 #: View/Gallery/admin_index.ctp:82
 msgid "Drafts"
-msgstr "پیش نویس"
+msgstr ""
 
 #: View/Helper/GalleryHelper.php:28
 msgid "New Album"
-msgstr "آلبوم جدید"
+msgstr ""
 
 #: View/Install/config.ctp:8
 msgid "Checking requirements before installing Gallery ..."
-msgstr "نیازمندی ها را قبل از نصب بررسی نمایید"
+msgstr ""
 
 #: View/Install/config.ctp:17
 msgid "Your app/webroot/files folder isn't writable"
-msgstr "پوشه webroot/files اجازه نوشتن ندارد"
+msgstr ""
 
 #: View/Install/config.ctp:25
 msgid "Your files folder is writable."
-msgstr "فایلهای پوشه شما نوشتنی است."
+msgstr ""
 
 #: View/Install/config.ctp:39
 msgid "Your app/Plugin/Gallery/Config folder isn't writable"
-msgstr "فایل gallery/Config نوشتنی نیست"
+msgstr ""
 
 #: View/Install/config.ctp:47
 msgid "Your config folder is writable."
-msgstr "تنظیمات شما نوشتنی است."
+msgstr ""
 
 #: View/Install/config.ctp:62
 msgid " You need to connect a database before continue."
-msgstr "شما نیاز دارید که اتصال به دیتابیس را قبل از ادامه برقرار کنید."
+msgstr ""
 
 #: View/Install/config.ctp:68
 msgid " Your database is connected."
-msgstr "دیتابیس شما متصل شده است."
+msgstr ""
 
 #: View/Install/config.ctp:77
 msgid "Configure my workflow now!"
-msgstr "گردش کار ما هم اکنون تنظیم کن."
+msgstr ""
 
 #: View/Install/config.ctp:92
 msgid "Please, fix all the items above to continue"
-msgstr "لطفا تمام ایتم های بالا را کامل کنید تا بتوانید ادامه دهید."
+msgstr ""
 
 #: View/Install/config.ctp:100
 msgid "We will create a config file and create 2 tables in your database."
 msgstr ""
-"ما هم اکنون فایل تنظیمات شما را به همراه دو جدول در دیتابیس ایجاد می کنیم."
 
 #: View/Layouts/default.ctp:6
 msgid "Croogo"
 msgstr ""
+

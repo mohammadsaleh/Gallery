@@ -98,13 +98,13 @@
                                     'tags',
                                     array(
                                         'value' => !empty($album) ? $album['Album']['tags'] : '',
-                                        'label' => 'Tags (comma separated)',
+                                        'label' => __d('gallery',"'Tags (comma separated)'"),
                                         'placeholder' => __d('gallery','Ex: city, sun, chicago')
                                     )
                                 ) ?>
                             </div>
                             <div class="col-md-3">
-                                <label for="">Status</label>
+                                <label for=""><?php  echo __d('gallery','Status') ?></label>
 
                                 <div class="manipulation">
                                     <?php echo $this->Form->input(
@@ -115,8 +115,8 @@
                                             'legend' => false,
                                             'separator' => '',
                                             'options' => array(
-                                                'draft' => 'Draft',
-                                                'published' => 'Published'
+                                                'draft' => __d('gallery','Draft'),
+                                                'published' => __d('gallery','Published')
                                             )
 
                                         )
@@ -133,10 +133,10 @@
 
                         <button class="btn btn-success pull-left btn-sm">
                             <i class="fa fa-check"></i>
-                            Save
+                            <?php __d('gallery','Save') ?>
                         </button>
                         <a href="javascript:void(0)" class="btn btn-default btn-sm pull-left close-config"
-                           style="margin-left: 10px">Close</a>
+                           style="margin-left: 10px"><?php  echo __d('gallery','Close') ?></a>
 
 
                         <button type="button" class="btn btn-warning btn-sm pull-right popovertrigger"
