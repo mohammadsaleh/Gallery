@@ -194,11 +194,11 @@
                             <div class="thumbnail th-pictures-container" style="position: relative">
                                 <?php 
                                     $picture_url = !empty($picture['styles']['medium']) ? $picture['styles']['medium'] : "http://placehold.it/255x170"; 
-                                    $picture_url = WWW_ROOT . $picture_url;
+                                    $picture_url = $this->request->webroot . $picture_url;
                                     
                                     
                                 ;?>
-                                <img src="<?php echo $picture_url ?>" alt="">
+                                <img src="<?php echo  $picture_url ?>" alt="">
                                 <div class="icons-manage-image">
                                     <a href="javascript:void(0)" class="remove-picture btn btn-lg btn-danger"
                                        data-file-id="<?php echo $picture['id'] ?>">

@@ -35,7 +35,9 @@
                 <?php foreach ($album['Picture'] as $picture) { ?>
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
-                            <img src="<?php echo $picture['styles']['medium'] ?>" alt="...">
+                        <img src= <?php echo $this->request->webroot . $picture['styles']['medium']; ?> >
+                        
+                            
                         </div>
                     </div>
                 <?php } ?>
