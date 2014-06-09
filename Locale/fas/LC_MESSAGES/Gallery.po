@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2014-06-09 08:08+0200\n"
-"PO-Revision-Date: 2014-06-09 10:39+0330\n"
+"PO-Revision-Date: 2014-06-09 10:42+0330\n"
 "Last-Translator: amir moharami <a.moharami@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: fa_IR\n"
@@ -157,7 +157,7 @@ msgstr "حذف آلبوم"
 
 #: View/Albums/admin_upload.ctp:182
 msgid "This album doesn't have pictures yet."
-msgstr "این آلبوم هنوز هیج عکسی ندارد"
+msgstr "این آلبوم هنوز هیچ عکسی ندارد"
 
 #: View/Albums/admin_upload.ctp:290
 msgid " Done"
