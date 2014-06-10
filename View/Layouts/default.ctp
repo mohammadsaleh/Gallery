@@ -51,7 +51,11 @@
 
         ?>
     </head>
-    <body>
+    <body class="<?php echo $this->params->params['controller'] . '_' . $this->params->params['action'] ?>"
+          data-base-url="<?php echo $this->params->webroot ?>"
+          data-plugin-base-url="<?php echo $this->Html->url(
+              array('plugin' => 'gallery', 'controller' => 'gallery', 'action' => 'index')
+          ) ?>">
         <div id="wrap">
             <?php echo $this->element('admin/header'); ?>
             <?php echo $this->element('admin/navigation'); ?>

@@ -18,7 +18,7 @@
             <?php if (empty($galleries)) { ?>
                 <div class="container-empty">
                     <div class="img"><i class="fa fa-picture-o"></i></div>
-                    <h2>You don't have <?php echo $search_status ?> albums yet.</h2>
+                    <h2><?php  echo __d('gallery','شما هیچ آلبوم منتشر شده ای ندارید.') ?></h2>
                     <br/>
                     <?php echo $this->Gallery->new_gallery_button(
                         array('class' => 'btn btn-primary', 'style' => 'margin-top: 10px')

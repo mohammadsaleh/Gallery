@@ -76,9 +76,8 @@ function saveOrder() {
 $(function () {
     $('.confirm-delete').on('click', function (e) {
         var link = this;
-
         e.preventDefault();
-
+        
         var resp = confirm("Are you sure?");
 
         if (resp) {

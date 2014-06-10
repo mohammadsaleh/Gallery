@@ -222,6 +222,7 @@
 <div id="folderinfo"
      data-public-folder-path="<?php echo $this->params->webroot . "files/gallery/" . $album['Album']['id'] . "/" ?>"></div>
 
+
 <script>
     $(function () {
 
@@ -278,8 +279,7 @@
                             'admin' => true,
                         ),
                         'class' => 'dropzone',
-                        'id' => 'drop',
-                        'style'=>'background-image: url("../img/amir.png")!important;'
+                        'id' => 'drop',                       
                     )
                 )?>
                 </form>
