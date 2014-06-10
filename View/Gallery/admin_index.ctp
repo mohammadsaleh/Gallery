@@ -38,7 +38,7 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="thumbnail <?php echo $search_status ?>">
                                 <?php $picture_url = !empty($gallery['Picture'][0]['styles']['medium']) ? $gallery['Picture'][0]['styles']['medium'] : "http://placehold.it/255x170"; ?>
-                                <img src="<?php echo $this->request->webroot .$picture_url ?>" alt="...">
+                                <?php echo $this->Html->image('/'.str_replace('\\', '/', $picture_url));?>
 
                                 <div class="caption">
                                     <h4>
