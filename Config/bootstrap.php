@@ -1,4 +1,5 @@
 <?php
+// test
 $config = array(
     'App' => array(
         # Choose what theme you want to use:
