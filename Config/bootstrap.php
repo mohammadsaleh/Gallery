@@ -41,6 +41,18 @@ CroogoNav::add('sidebar', 'gallery', array(
 		'action' => 'index',
 		'admin' => true,
 	),
+        'children' => array(
+            'gallery' => array(
+                'title' => __d('gallery', 'Gallery'),
+                'url' => array(
+                        'plugin' => 'gallery',
+                        'controller' => 'gallery',
+                        'action' => 'index',
+                        'admin' => true,
+                ),
+                'weight' => 1,
+            )
+        ),
 	'weight' => 50,
 ));
 
@@ -53,5 +65,5 @@ CroogoNav::add('sidebar', 'gallery.children.settings', array(
         'action' => 'setting',
         'admin' => true,
     ),
-    'weight' => 1,
+    'weight' => 2,
 ));
