@@ -192,13 +192,8 @@
                         <div class="col-xs-6 col-md-3 ui-state-default" alt="<?php echo $picture['id'] ?>"
                              id="<?php echo $picture['id'] ?>">
                             <div class="thumbnail th-pictures-container" style="position: relative">
-                                <?php 
-                                    $picture_url = !empty($picture['styles']['medium']) ? $picture['styles']['medium'] : "http://placehold.it/255x170"; 
-                                    $picture_url = $this->request->webroot . $picture_url;
-                                    
-                                    
-                                ;?>
-                                <img src="<?php echo  $picture_url ?>" alt="">
+                                <?php $picture_url = !empty($picture['styles']['medium']) ? $picture['styles']['medium'] : "http://placehold.it/255x170";?>
+                                <?php echo $this->Html->image('/'.str_replace('\\', '/', $picture_url));?>
                                 <div class="icons-manage-image">
                                     <a href="javascript:void(0)" class="remove-picture btn btn-lg btn-danger"
                                        data-file-id="<?php echo $picture['id'] ?>">
