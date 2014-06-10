@@ -31,12 +31,12 @@ $config = array(
 );
 Configure::write('GalleryOptions', $config);
 
-CroogoNav::add('Gallery', array(
-	'icon' => array('picture', 'large'),
+CroogoNav::add('sidebar', 'gallery', array(
+	'icon' => array('camera-retro', 'large'),
 	'title' => __d('gallery', 'Gallery'),
 	'url' => array(
 		'plugin' => 'gallery',
-		'controller' => 'Gallery',
+		'controller' => 'gallery',
 		'action' => 'index',
 		'admin' => true,
 	),
@@ -44,14 +44,13 @@ CroogoNav::add('Gallery', array(
 ));
 
 
-CroogoNav::add('settings.children.gallery', array(
-    'title' => __d('gallery', 'Gallery'),
+CroogoNav::add('sidebar', 'gallery.children.settings', array(
+    'title' => __d('gallery', 'Settings'),
     'url' => array(
         'plugin' => 'gallery',
-        'controller' => 'Gallery',
+        'controller' => 'gallery',
         'action' => 'setting',
         'admin' => true,
     ),
-//    'icon' => array('beaker', 'larg'),
     'weight' => 1,
 ));
