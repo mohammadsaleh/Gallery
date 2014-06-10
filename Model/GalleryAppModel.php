@@ -1,8 +1,9 @@
 <?php
-/**
- * @var $this View
- */
+App::uses('AppModel', 'Model');
 
 class GalleryAppModel extends AppModel{
 
 } 
+
+
+

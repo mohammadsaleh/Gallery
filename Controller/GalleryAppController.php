@@ -1,5 +1,5 @@
 <?php
-App::uses('Controller', 'Controller');
+App::uses('AppController', 'Controller');
 
 class GalleryAppController extends AppController
 {
