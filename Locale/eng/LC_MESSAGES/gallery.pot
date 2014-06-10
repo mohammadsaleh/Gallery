@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2014-06-09 08:08+0200\n"
+"POT-Creation-Date: 2014-06-10 08:09+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -24,6 +24,10 @@ msgstr ""
 
 #: Controller/AlbumsController.php:50
 msgid "You configurations are saved."
+msgstr ""
+
+#: Controller/AlbumsController.php:112
+msgid "Album deleted."
 msgstr ""
 
 #: Controller/GalleryController.php:22
@@ -91,7 +95,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: View/Albums/admin_upload.ctp:19;186;267
+#: View/Albums/admin_upload.ctp:19;186;268
 msgid "Upload pictures"
 msgstr ""
 
@@ -105,10 +109,6 @@ msgstr ""
 
 #: View/Albums/admin_upload.ctp:77
 msgid "Album options"
-msgstr ""
-
-#: View/Albums/admin_upload.ctp:87
-msgid "title"
 msgstr ""
 
 #: View/Albums/admin_upload.ctp:90
@@ -125,10 +125,6 @@ msgstr ""
 
 #: View/Albums/admin_upload.ctp:107
 msgid "Status"
-msgstr ""
-
-#: View/Albums/admin_upload.ctp:111
-msgid "status"
 msgstr ""
 
 #: View/Albums/admin_upload.ctp:118
@@ -169,6 +165,10 @@ msgstr ""
 
 #: View/Albums/admin_view.ctp:32
 msgid "This album has no photos yet."
+msgstr ""
+
+#: View/Gallery/admin_index.ctp:21
+msgid "شما هیچ آلبوم منتشر شده ای ندارید."
 msgstr ""
 
 #: View/Gallery/admin_index.ctp:82
