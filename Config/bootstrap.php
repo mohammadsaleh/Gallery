@@ -47,10 +47,10 @@ CroogoNav::add('Gallery', array(
 CroogoNav::add('settings.children.gallery', array(
     'title' => __d('gallery', 'Gallery'),
     'url' => array(
-        'admin' => true,
         'plugin' => 'gallery',
-        'controller' => 'templates',
-        'action' => 'setting'
+        'controller' => 'Gallery',
+        'action' => 'setting',
+        'admin' => true,
     ),
 //    'icon' => array('beaker', 'larg'),
     'weight' => 1,

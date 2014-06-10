@@ -7,23 +7,23 @@ class GalleryActivation {
 	}
 
 	public function onActivation(&$controller) {
-            $setting = ClassRegistry::init('Setting');
-            $setting->write('Gallery.small_width', '50', array(
+            
+            $controller->Setting->write('Gallery.small_width', '50', array(
                 'editable' => '1'
             ));
-            $setting->write('Gallery.small_height', '50', array(
+            $controller->Setting->write('Gallery.small_height', '50', array(
                 'editable' => '1'
             ));
-            $setting->write('Gallery.medium_width', '255', array(
+            $controller->Setting->write('Gallery.medium_width', '255', array(
                 'editable' => '1'
             ));
-            $setting->write('Gallery.medium_height', '170', array(
+            $controller->Setting->write('Gallery.medium_height', '170', array(
                 'editable' => '1'
             ));
-            $setting->write('Gallery.large_width', '0', array(
+            $controller->Setting->write('Gallery.large_width', '0', array(
                 'editable' => '1'
             ));
-            $setting->write('Gallery.large_height', '533', array(
+            $controller->Setting->write('Gallery.large_height', '533', array(
                 'editable' => '1'
             ));
             
@@ -35,13 +35,12 @@ class GalleryActivation {
 	}
 
 	public function onDeactivation(&$controller) {
-            $setting = ClassRegistry::init('Setting');
-            $setting->deleteKey('Gallery.small_width');
-            $setting->deleteKey('Gallery.small_height');
-            $setting->deleteKey('Gallery.medium_width');
-            $setting->deleteKey('Gallery.medium_height');
-            $setting->deleteKey('Gallery.large_width');
-            $setting->deleteKey('Gallery.large_height');
+            $controller->Setting->deleteKey('Gallery.small_width');
+            $controller->Setting->deleteKey('Gallery.small_height');
+            $controller->Setting->deleteKey('Gallery.medium_width');
+            $controller->Setting->deleteKey('Gallery.medium_height');
+            $controller->Setting->deleteKey('Gallery.large_width');
+            $controller->Setting->deleteKey('Gallery.large_height');
             return true;
 	}
 
