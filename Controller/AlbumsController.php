@@ -109,7 +109,7 @@ class AlbumsController extends GalleryAppController
 	        $album_dir = WWW_ROOT . 'files' . DS . 'gallery' . DS . $id . DS;
 	        $this->Util->deleteDir($album_dir);
 
-	        $this->Session->setFlash("Album deleted.");
+	        $this->Session->setFlash(__d('gallery','Album deleted.'));
 
 	        $this->redirect(array('controller' => 'gallery', 'action' => 'index', 'plugin' => 'gallery'));
 	    }

@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <?php echo $this->Form->input(
-                                    __d('gallery','title'),
+                                   'title',
                                     array(
                                         'value' => !empty($album) ? $album['Album']['title'] : '',
                                         'label' => __d('gallery','Album title'),
@@ -108,7 +108,7 @@
 
                                 <div class="manipulation">
                                     <?php echo $this->Form->input(
-                                        __d('gallery','status'),
+                                        'status',
                                         array(
                                             'type' => 'radio',
                                             'value' => !empty($album) ? $album['Album']['status'] : 'published',
