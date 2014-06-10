@@ -35,9 +35,9 @@
                 <?php foreach ($album['Picture'] as $picture) { ?>
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
-                        <img src= <?php echo $this->request->webroot . $picture['styles']['medium']; ?> >
-                        
-                            
+                            <?php
+                            echo $this->Html->image('/'.str_replace('\\', '/', $picture['styles']['medium']));
+                            ?>
                         </div>
                     </div>
                 <?php } ?>
