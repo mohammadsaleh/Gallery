@@ -37,27 +37,16 @@ class GalleryController extends GalleryAppController
  * @return void
  */
 	public function admin_setting(){		
-		if (!empty($this->request->data)) {
-			$data = $this->request->data;
-			
-			$small_width = $data['Gallery']['small_width'];
-			$small_height = $data['Gallery']['small_height'];
+            if (!empty($this->request->data)) {
+                $small_width = $this->request->data['Gallery']['small_width'];
+                $small_height = $this->request->data['Gallery']['small_height'];
 
-			$this->Setting->write('Gallery.small_width', $small_width, array(
-			    'editable' => '1'
-			));
-			$this->Setting->write('Gallery.small_height', $small_height, array(
-			    'editable' => '1'
-			));	
-			
-			
-		}
-		
-
-		
+                $this->Setting->write('Gallery.small_width', $small_width, array(
+                    'editable' => '1'
+                ));
+                $this->Setting->write('Gallery.small_height', $small_height, array(
+                    'editable' => '1'
+                ));	
+            }
 	}
-
-
-
-
 } 
