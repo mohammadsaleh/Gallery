@@ -1,21 +1,18 @@
 <?php
+
 App::uses('File', 'Utility');
 App::uses('ConnectionManager', 'Model');
 
-class InstallController extends GalleryAppController
-{
+class InstallController extends GalleryAppController {
 
-
-    public function configuration_form()
-    {
+    public function configuration_form() {
         $this->render('Gallery.Install/config');
     }
 
     /**
      * Configure galleries and create mysql tables
      */
-    public function configure()
-    {
+    public function configure() {
         $files_path = WWW_ROOT . 'files/';
         if (!file_exists($files_path)) {
             mkdir($files_path, 0755);
@@ -29,14 +26,14 @@ class InstallController extends GalleryAppController
 
         sleep(10);
 
-        $this->Session->setFlash(__d('gallery','Success! Gallery is now installed in your app.'));
+        $this->Session->setFlash(__d('gallery', 'Success! Gallery is now installed in your app.'));
 
         $this->redirect(
-            array(
-                'controller' => 'gallery',
-                'action' => 'index',
-                'plugin' => 'gallery'
-            )
+                array(
+                    'controller' => 'gallery',
+                    'action' => 'index',
+                    'plugin' => 'gallery'
+                )
         );
 
         $this->render(false, false);
@@ -45,20 +42,18 @@ class InstallController extends GalleryAppController
     /**
      * Configure database to use this plugin
      */
-    private function _configureDatabase()
-    {
+    private function _configureDatabase() {
         try {
             $db = ConnectionManager::getDataSource('default');
 
             if (!$db->isConnected()) {
-                throw new Exception(__d('gallery','"You need to connect to a MySQL Database to use this Plugin."'));
+                throw new Exception(__d('gallery', '"You need to connect to a MySQL Database to use this Plugin."'));
             }
 
             /** Verify if the tables already exists */
             if (!$this->_checkTables($db->listSources())) {
                 $this->_setupDatabase($db);
             }
-
         } catch (Exception $e) {
             $this->Session->setFlash($e->getMessage());
             $this->redirect('/');
@@ -69,8 +64,7 @@ class InstallController extends GalleryAppController
      * @param $tables
      * @return bool
      */
-    private function _checkTables($tables)
-    {
+    private function _checkTables($tables) {
         return !!in_array('gallery_albums', $tables) && !!in_array('gallery_pictures', $tables);
     }
 
@@ -79,8 +73,7 @@ class InstallController extends GalleryAppController
      * Create the config File
      * @param $db
      */
-    private function _setupDatabase($db)
-    {
+    private function _setupDatabase($db) {
         # Execute the SQL to create the tables
         $sqlFile = new File(App::pluginPath('Gallery') . 'Config' . DS . 'cakegallery.sql', false);
         $db->rawQuery($sqlFile->read());
@@ -93,11 +86,10 @@ class InstallController extends GalleryAppController
     /**
      * Create the config file copying the config.php.install file
      */
-    private function _createConfigFile()
-    {
+    private function _createConfigFile() {
         copy(
-            App::pluginPath('Gallery') . 'config' . DS . 'config.php.install',
-            App::pluginPath('Gallery') . 'config' . DS . 'config.php'
+                App::pluginPath('Gallery') . 'config' . DS . 'config.php.install', App::pluginPath('Gallery') . 'config' . DS . 'config.php'
         );
     }
-} 
+
+}
