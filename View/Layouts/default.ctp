@@ -12,12 +12,18 @@
             array(
                 '/croogo/css/croogo-bootstrap',
                 '/croogo/css/croogo-bootstrap-responsive',
-                '/croogo/css/thickbox',
+                '/croogo/css/thickbox'
+                )
+            );
+        $this->startIfEmpty('Gallery.style');
+            echo $this->Html->css(array(
                 'Gallery.themes/' . Configure::read('GalleryOptions.App.theme') . '.min',
                 'Gallery.dropzone',
                 'Gallery.style'
-                )
-            );
+            ));
+        $this->end();
+        echo $this->fetch('Gallery.style');
+        
         echo $this->Layout->js();
         echo $this->Html->script('Gallery.lib/modernizr');
 
