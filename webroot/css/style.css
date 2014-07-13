@@ -177,3 +177,7 @@ table tr[data-href] {
 #folderStatus, .panel.options{
     display: none;
 }
+.modal-title,
+.panel-title{
+    font-family: tahoma;
+}

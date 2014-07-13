@@ -23,6 +23,9 @@
             ));
         $this->end();
         echo $this->fetch('Gallery.style');
+        if(isset($adminTemplateSetting['rtl']) && (int)$adminTemplateSetting['rtl']){
+            echo $this->Html->css(array('Gallery.style_rtl'));
+        }
         
         echo $this->Layout->js();
         echo $this->Html->script('Gallery.lib/modernizr');
